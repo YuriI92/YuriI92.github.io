@@ -9,7 +9,9 @@ url += '&client_id=' + encodeURIComponent(client_id);
 url += '&scope=' + encodeURIComponent(scope);
 url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
 
-fetch(url)
+fetch(url, {
+  mode: 'cors'
+})
     .then(function(response) {
         console.log(response);
     });
