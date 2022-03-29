@@ -10,7 +10,10 @@ url += '&scope=' + encodeURIComponent(scope);
 url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
 
 fetch(url, {
-  mode: 'cors'
+  mode: 'cors',
+  headers: {
+    "Access-Control-Allow-Origin": "*";
+  }
 })
     .then(function(response) {
         console.log(response);
