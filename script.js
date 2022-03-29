@@ -12,7 +12,7 @@ url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
 fetch(url, {
   mode: 'cors',
   headers: {
-    "Access-Control-Allow-Origin": "*";
+    "Access-Control-Allow-Origin": "*"
   }
 })
     .then(function(response) {
